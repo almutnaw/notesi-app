@@ -13,12 +13,20 @@
 
 @end
 
+
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
+    self.responseData = [NSMutableData new];
+    
+    
+    NSURL *url = [NSURL URLWithString:@"http://www.google.com"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
+    
+    [request setHTTPMethod:@"GET"];
+ //   [[NSURLConnection alloc] initWithRequest:request delegate:self];
 
 }
 
@@ -26,12 +34,22 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    //[self.responseData setLength:0];
+}
 
 
 - (IBAction)logIn:(id)sender {
-    // hello
+    
     
 }
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if ([[segue identifier] isEqualToString:@"signInSegue"]) {
+        [segue destinationViewController];
+    }
+}
+
 
 
 @end
