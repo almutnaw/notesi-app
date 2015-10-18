@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "NSData+Additions.h"
+
 
 @interface ViewController ()
 
@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    printf("I can't wait to push this project to GitHub");
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,12 +30,6 @@
 
 - (IBAction)logIn:(id)sender {
     
-    NSLog(@"username:%@",self.userName.text);
-    NSLog(@"password:%@",self.passWord.text);
-    NSString *authStr = [NSString stringWithFormat:@"%@:%@", self.userName.text, self.passWord.text];
-    NSData *authData = [authStr dataUsingEncoding:NSUTF8StringEncoding];
-    NSString *authValue = [NSString stringWithFormat:@"Basic %@", [authData base64Encoding]];
-    [request setValue:authValue forHTTPHeaderField:@"Authorization"];
 }
 
 

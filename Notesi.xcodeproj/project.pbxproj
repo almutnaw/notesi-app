@@ -14,7 +14,6 @@
 		E6210A701BD35645000F0211 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6210A6F1BD35645000F0211 /* Images.xcassets */; };
 		E6210A731BD35645000F0211 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6210A711BD35645000F0211 /* LaunchScreen.xib */; };
 		E6210A7F1BD35646000F0211 /* NotesiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6210A7E1BD35646000F0211 /* NotesiTests.m */; };
-		E6210A8C1BD3919B000F0211 /* NSData+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E6210A8B1BD3919B000F0211 /* NSData+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +40,6 @@
 		E6210A781BD35646000F0211 /* NotesiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6210A7D1BD35646000F0211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6210A7E1BD35646000F0211 /* NotesiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesiTests.m; sourceTree = "<group>"; };
-		E6210A8A1BD3919B000F0211 /* NSData+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Additions.h"; path = "../../../Downloads/NSData+Additions/NSData+Additions.h"; sourceTree = "<group>"; };
-		E6210A8B1BD3919B000F0211 /* NSData+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Additions.m"; path = "../../../Downloads/NSData+Additions/NSData+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +85,6 @@
 				E6210A671BD35645000F0211 /* AppDelegate.m */,
 				E6210A691BD35645000F0211 /* ViewController.h */,
 				E6210A6A1BD35645000F0211 /* ViewController.m */,
-				E6210A8A1BD3919B000F0211 /* NSData+Additions.h */,
-				E6210A8B1BD3919B000F0211 /* NSData+Additions.m */,
 				E6210A6C1BD35645000F0211 /* Main.storyboard */,
 				E6210A6F1BD35645000F0211 /* Images.xcassets */,
 				E6210A711BD35645000F0211 /* LaunchScreen.xib */,
@@ -226,7 +221,6 @@
 			files = (
 				E6210A6B1BD35645000F0211 /* ViewController.m in Sources */,
 				E6210A681BD35645000F0211 /* AppDelegate.m in Sources */,
-				E6210A8C1BD3919B000F0211 /* NSData+Additions.m in Sources */,
 				E6210A651BD35645000F0211 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +424,7 @@
 				E6210A841BD35646000F0211 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6210A851BD35646000F0211 /* Build configuration list for PBXNativeTarget "NotesiTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +433,7 @@
 				E6210A871BD35646000F0211 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
