@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSData+Additions.h"
 
 @interface ViewController ()
 
@@ -25,5 +26,17 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (IBAction)logIn:(id)sender {
+    
+    NSLog(@"username:%@",self.userName.text);
+    NSLog(@"password:%@",self.passWord.text);
+    NSString *authStr = [NSString stringWithFormat:@"%@:%@", self.userName.text, self.passWord.text];
+    NSData *authData = [authStr dataUsingEncoding:NSUTF8StringEncoding];
+    NSString *authValue = [NSString stringWithFormat:@"Basic %@", [authData base64Encoding]];
+    [request setValue:authValue forHTTPHeaderField:@"Authorization"];
+}
+
 
 @end
