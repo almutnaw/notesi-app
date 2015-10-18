@@ -20,7 +20,8 @@
     [super viewDidLoad];
     
     self.responseData = [NSMutableData new];
-    
+    [self.passWord setDelegate:self];
+    [self.userName setDelegate:self];
     
     NSURL *url = [NSURL URLWithString:@"http://www.google.com"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
@@ -48,6 +49,12 @@
     if ([[segue identifier] isEqualToString:@"signInSegue"]) {
         [segue destinationViewController];
     }
+}
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
+    return YES;
 }
 
 

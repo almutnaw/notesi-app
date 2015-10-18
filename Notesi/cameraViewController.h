@@ -18,4 +18,5 @@
 - (IBAction)selectPhoto:(UIButton *)sender;
 
 @end
-@interface APPViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate
+@interface APPViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@end
